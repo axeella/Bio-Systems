@@ -1,0 +1,7 @@
+a) In the interactive session, we saw reaction fluxes in a linear pathway being equal to each other due to mass balance constraints. Do you observe the same thing now for the maximal reaction activities? Explain your observations. 
+
+No, the maximal reaction activities are not equal in linear pathways. They vary a lot, because they reflect estimated enzyme capacity from gene expression, not steady-state flux balance. 
+
+b) Some reactions have no maximal reaction activity data. Identify at least two different kinds of such reactions, and explain why gene expression-derived data would not be applicable for these kinds of reactions.
+
+Exchange/transport reactions like EX_pyr_e, EX_for_e, EX_acald_e. These aren’t catalyzed by intracellular enzymes → no gene expression to map. Additionally, Non-enzymatic/pseudoreactions like FORti, these aren’t linked to specific genes, so expression data isn’t meaningful.
