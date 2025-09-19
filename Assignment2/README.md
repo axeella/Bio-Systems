@@ -1,0 +1,1 @@
+Answer to each part can be found in the exercise file of the same name. Notebook files are already loaded, but the results can be obtained simply by installing the dependencies defined inside of the assignment and running the cells. Reused code can be found in each notebook where it is needed.
