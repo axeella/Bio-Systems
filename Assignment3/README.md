@@ -1,6 +1,20 @@
 ### Which mutation is most dangerous and why? Provide quantitative evidence.
 
+#### Results summary (attractor basins over all 2^8 = 256 initial states)
+
+**Cancer-like state definition used here:** the attractor has **DNA_damage = 1**, **Growth = 1**, **Death = 0** (i.e., proliferative despite DNA damage).
+
+| Network            | Healthy growth | Apoptosis | Tumor-like (cancer-like) |
+|--------------------|----------------|-----------|--------------------------|
+| **Normal**         | 128 (50.0%)    | 120 (46.9%) | 8 (3.1%)               |
+| **A — p53 KO**     | 128 (50.0%)    | 0 (0.0%)    | 128 (50.0%)            |
+| **B — MYC OE**     | 128 (50.0%)    | 120 (46.9%) | 8 (3.1%)               |
+| **C — MDM2 OE**    | 128 (50.0%)    | 0 (0.0%)    | 128 (50.0%)            |
+
+
 The most dangerous mutation appears to be the p53 knock out. Because of the loss of tumor suppression, all starting states within the boolean model will lead to growth. According to the analysis of all possible starting states, 50% of those will be normal growth, while the other 50% will be tumor-like growth. This is usually dangerous for the organism. The MYC amplification presents similar consequences, and is thus also dangerous. This is because MYC will cause the knock out of p53, practically.
+
+
 
 ### Explain the role of feedback loops (e.g., MYC -> MDM2 -> p53)
 
